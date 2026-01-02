@@ -1,0 +1,23 @@
+lib/
+├── main.dart
+├── app/
+│   ├── router.dart
+│   └── theme.dart
+├── core/
+│   ├── models/
+│   │   └── roadmap.dart
+│   └── services/
+│       └── claude_service.dart
+├── features/
+│   ├── home/
+│   │   └── home_page.dart
+│   ├── goal_input/
+│   │   └── goal_input_page.dart
+│   ├── roadmap_generation/
+│   │   ├── roadmap_loading_page.dart
+│   │   └── providers/
+│   │       └── roadmap_provider.dart
+│   └── roadmap_view/
+│       ├── roadmap_page.dart
+│       └── widgets/
+│           └── phase_card.dart
