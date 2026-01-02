@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'app/router.dart';
+import 'app/theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: RoadmapCoachApp()));
@@ -10,17 +12,11 @@ class RoadmapCoachApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp.router(
       title: 'Roadmap Coach',
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Roadmap Coach 🚀',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: buildAppTheme(),
+      routerConfig: buildRouter(),
     );
   }
 }
